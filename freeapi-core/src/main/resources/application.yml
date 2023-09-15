@@ -42,8 +42,8 @@ freeapi:
     secret-key: abcdefgh
 #配置阿里云短信服务
   sms:
-    access-key: LTAI5tAohvtnaizrLRhTeFcA
-    secret-key: vTStp41z6zd5p6t8RXXLc5tVqXcejO
+    access-key: 
+    secret-key: 
 dubbo:
   application:
     name: dubbo-springboot-provider
