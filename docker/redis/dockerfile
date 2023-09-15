@@ -1,0 +1,13 @@
+# 基础镜像
+FROM redis
+# author
+MAINTAINER zhaoxi
+
+# 指定容器内部挂载目录
+VOLUME /home/zhaoxi/redis
+# 在容器中创建目录
+RUN mkdir -p /home/zhaoxi/redis
+# 指定工作路径
+WORKDIR /home/zhaoxi/redis
+# 复制conf文件到路径
+COPY ./conf/redis.conf /home/zhaoxi/redis/redis.conf

@@ -1,0 +1,10 @@
+# 公共配置文件
+
+server:
+  port: 8123
+  servlet:
+    context-path: /api
+freeapi:
+  client:
+    access-key: zhaoxi
+    secret-key: abcdefgh

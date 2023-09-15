@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.zhaoxi</groupId>
+        <artifactId>freeapi-backend</artifactId>
+        <version>1.0.1</version>
+    </parent>
+
+    <groupId>com.zhaoxi</groupId>
+    <artifactId>freeapi-interface</artifactId>
+    <version>1.0.1</version>
+    <name>freeapi-interface</name>
+    <description>freeapi-interface 接口模块</description>
+
+    <dependencies>
+<!--        aop-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+<!--        freeapi-sdk-->
+        <dependency>
+            <groupId>com.zhaoxi</groupId>
+            <artifactId>freeapi-client-sdk</artifactId>
+        </dependency>
+        <!-- SpringCloud Alibaba Nacos 注册中心 -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+        <!-- SpringCloud Alibaba Nacos Config  配置中心-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+    </dependencies>
+</project>

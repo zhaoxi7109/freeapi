@@ -1,0 +1,18 @@
+# 基础镜像
+# FROM  openjdk:8-jre
+FROM openjdk:8-jdk-slim
+# author
+MAINTAINER zhaoxi
+
+# 指定容器内部挂载目录
+VOLUME /home/freeapi
+# 在容器中创建目录
+RUN mkdir -p /home/freeapi
+# 指定工作路径
+WORKDIR /home/freeapi
+# 复制jar文件到路径
+COPY ./jar/freeapi-interface.jar /home/freeapi/freeapi-interface.jar
+# 容器对外暴露的端口，这个可以暴露，以便访问swagger文档
+# EXPOSE 8123
+# 启动认证服务
+ENTRYPOINT ["java","-jar","freeapi-interface.jar"]

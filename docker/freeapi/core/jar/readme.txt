@@ -1,0 +1,1 @@
+将interface模块打包好的jar文件放到这里的jar目录下，用于docker启动应用。
